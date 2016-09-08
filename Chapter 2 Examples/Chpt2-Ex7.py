@@ -14,4 +14,4 @@ liters = gas * 3.78541
 liters_per_100km = 100 * (liters/kilometers)
 print("Kilometers driven:", kilometers)
 print('Liters used:',liters)
-print("Liters per 100km:",liters_per_100km)
+print('Liters per 100km:', liters_per_100km)

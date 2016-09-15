@@ -26,7 +26,7 @@ else:
 packs_of_buns_needed = hot_dogs_needed // 8
 if packs_of_buns_needed != 0:
     print('You will need', packs_of_buns_needed + 1, 'packs of buns.')
-    print('You will have', ((packs_of_buns_needed + 1) * 8) - hot_dogs_needed,'buns left.')
+    print('You will have', ((packs_of_buns_needed + 1) * 8) - hot_dogs_needed, 'buns left.')
 else:
     print('You will need', packs_of_buns_needed, 'packs of buns.')
-    print('You will have', ((packs_of_buns_needed) * 8) - hot_dogs_needed,'buns left.')
+    print('You will have', ((packs_of_buns_needed) * 8) - hot_dogs_needed, 'buns left.')

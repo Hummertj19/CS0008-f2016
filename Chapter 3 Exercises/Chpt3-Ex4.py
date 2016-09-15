@@ -31,8 +31,7 @@ elif number == 9:
     print('IX')
 elif number == 10:
     print('X')
+elif number < 1:
+    print('Error')
 else:
-    if number < 1:
-        print('Error')
-    elif number > 1:
-        print('Error')
+    print('Error')

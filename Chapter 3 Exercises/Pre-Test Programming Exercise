@@ -1,0 +1,61 @@
+# Justin Hummert
+# JPH99@pitt.edu
+# 9/21/16
+# CS0008-f2016
+# Max Novelli (man8@pitt.edu)
+#
+# Description:
+# Pre-Test Programming Exercise Number 10
+
+# Asking user about the bolt and whether they are in-state or out-of-state
+bolts_ordered = int(input('How many bolts do you want to order?'))
+state = input('Enter + for in-state or - for out-of-state orders.')
+
+# Calculating discount based on quantity ordered
+if bolts_ordered <1:
+    print('Error')
+elif 1 <= bolts_ordered <= 1000:
+    discount = (1-.1)
+elif 1001 <= bolts_ordered <= 5000:
+    discount = (1-.15)
+elif 5001 <= bolts_ordered <= 10000:
+    discount = (1-.2)
+else:
+    discount = (1-.2+(bolts_ordered*.001))
+total_price_after_discount = bolts_ordered * discount
+print('You will only pay',discount,'percent of the total price.')
+print('Your total price after discount is',total_price_after_discount)
+
+#Calculating shipping price and discount
+shipping_price = bolts_ordered * .1
+if bolts_ordered < 1:
+    print('Error')
+elif 1 <= bolts_ordered <= 500:
+    sd = 0
+elif 501 <= bolts_ordered <= 1000:
+    sd = (1-.025) * shipping_price
+elif 1001 <= bolts_ordered <= 2000:
+    sd = (1-.05) * shipping_price
+elif 2001 <= bolts_ordered <= 3000:
+    sd = (1-.075) * shipping_price
+elif 3001 <= bolts_ordered <= 4000:
+    sd = (1-.1) * shipping_price
+elif 4001 <= bolts_ordered <= 5000:
+    sd = (1-.15) * shipping_price
+elif 5001 <= bolts_ordered <= 10000:
+    sd = (1-.2) * shipping_price
+else:
+    sd = 800 + (250*(bolts_ordered%10000))
+print('Your shipping rate will be',sd)
+print('Your total price before tax is',sd + total_price_after_discount)
+
+# Figuring out tax based on in-state or out-of-state
+if state == '+':
+    final_price = (sd + total_price_after_discount)*1.1
+elif state == '-':
+    final_price = (sd + total_price_after_discount)*1.07
+else:
+    print('Enter either a + or a - please.')
+
+# Returning results to user
+print('Your total price is $',format(final_price,',.3f'))

@@ -9,7 +9,7 @@
 
 # Asking user in input speed and time
 speed = int(input('What is the speed of the vehicle in mph?'))
-time = int(input('How many hours has it travelled'))
+time = int(input('How many hours has it travelled?'))
 
 # Calculating and displaying distance for each hour
 hour = 0

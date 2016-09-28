@@ -45,7 +45,7 @@ elif 4001 <= bolts_ordered <= 5000:
 elif 5001 <= bolts_ordered <= 10000:
     sd = (1-.2) * shipping_price
 else:
-    sd = 800 + (250*(bolts_ordered%10000))
+    sd = 800 + (250*((bolts_ordered-10000)//10000))
 print('Your shipping rate will be',sd)
 print('Your total price before tax is',sd + total_price_after_discount)
 

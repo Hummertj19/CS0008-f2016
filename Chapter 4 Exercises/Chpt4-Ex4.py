@@ -15,6 +15,6 @@ time = int(input('How many hours has it travelled?'))
 hour = 0
 distance = 0
 while hour < time:
-    distance = (speed * time) + distance
-    hour = hour + 1
+    distance += (speed * time)
+    hour += 1
     print('During hour',hour,'you traveled',distance,'miles.')

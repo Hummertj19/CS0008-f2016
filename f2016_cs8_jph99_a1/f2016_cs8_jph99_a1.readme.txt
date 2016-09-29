@@ -1,0 +1,7 @@
+The program asks the user to enter either + or -, depending on the system that they want to use.
+If the user enters anything other than + or -, the program displays "Error" and then ends.
+Once the user enter either + or  -, the program asks the user to enter how far they drove and how muc hgas they used,
+and converts based on the system. If the user has entered +, the variables assigned will be the USC gas and distance, and
+then the Metric gas and distance will be found, and the same thing the other way.
+Once the data entered is collected and converted, the miles per gallon and liters per 100 Km are calculated.
+Finally, once everything has been calculated, the program displays the data in a table.

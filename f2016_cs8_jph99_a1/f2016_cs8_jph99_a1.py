@@ -29,7 +29,7 @@ else:
     us_mpg = distance_us/gas_us
 
 # Displaying Data
-print('                USC     Metric')
-print('Distance     :',format(distance_us,'6,.3f'),format(distance_metric,'6,.3f'))
-print('Gas          :',format(gas_us,'6.3f'),format(gas_metric,'6.3f'))
-print('Consumption  :',format(us_mpg,'6.3f'),format(metric_lpok,'6.3f'))
+print('              ','    USC','      Metric')
+print('Distance     :', '{:>10.3f}'.format(distance_us), '{:>10.3f}'.format(distance_metric))
+print('Gas          :', '{:>10.3f}'.format(gas_us), '{:>10.3f}'.format(gas_metric))
+print('Consumption  :', '{:>10.3f}'.format(us_mpg), '{:>10.3f}'.format(metric_lpok))

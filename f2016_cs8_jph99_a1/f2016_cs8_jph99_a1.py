@@ -7,12 +7,16 @@
 # Description:
 # Assignment Number 1
 
-# Asking user for USC or Metric, and then converting
+# Asking user for USC or Metric
 system = (input('Enter + for USC or - for Metric units. '))
+
+# Stopping program if the user does't enter the correct string
 if system != '+':
     if system != '-':
         print('Error')
         quit()
+
+# Converting from US to Metric
 if system == '+':
     distance_us = float(input('How far did you drive? '))
     gas_us = float(input('How much gas did you use? '))
@@ -20,6 +24,8 @@ if system == '+':
     gas_metric = gas_us * 3.78541
     us_mpg = distance_us/gas_us
     metric_lpok = (100 * gas_metric)/distance_metric
+
+# Converting from Metric to US
 else:
     distance_metric = float(input('How far did you drive? '))
     gas_metric = float(input('How much gas did you use? '))

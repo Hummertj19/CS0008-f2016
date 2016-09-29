@@ -1,0 +1,7 @@
+Enter + for USC or - for Metric units. -
+How far did you drive? 453
+How much gas did you use? 64
+                   USC       Metric
+Distance     :    281.481    453.000
+Gas          :     16.907     64.000
+Consumption  :     16.649     14.128

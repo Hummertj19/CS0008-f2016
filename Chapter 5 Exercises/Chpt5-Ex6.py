@@ -7,7 +7,7 @@
 # Description:
 # Starting with Python, Chapter 5, Exercise 6
 
-# This program takes the values for grams of fat and carbs and converts to calories from each
+# This program takes the values for grams of fat and carbs and converts them to calories
 
 
 def calorie_calculator():

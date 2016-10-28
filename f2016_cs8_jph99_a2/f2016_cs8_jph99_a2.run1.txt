@@ -1,0 +1,15 @@
+First file: f2016_cs8_a2.data.2.csv
+File to be read                  : f2016_cs8_a2.data.2.csv
+Partial total # of lines         : 50
+Partial total distance ran       : 2195.061
+
+Next file: f2016_cs8_a2.data.1.csv
+File to be read                  : f2016_cs8_a2.data.1.csv
+Partial total # of lines         : 50
+Partial total distance ran       : 2298.967
+
+Next file: quit
+
+Totals
+Total number of lines            : 100
+Total distance ran               : 4494.027

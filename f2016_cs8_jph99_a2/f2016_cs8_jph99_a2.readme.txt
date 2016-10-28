@@ -1,0 +1,14 @@
+The idea of this program was to take a data file with lines that have a name and a distance, for example (Justin,65.234)
+First, program asks the user to enter a name of a file. At this point, the program opens the file to read and begins to
+read through it. I used a for loop so that the program would go through each line of the file. In the process_file function,
+after the file is opened, I had it count the number of lines by keeping a running total, adding one to this total after
+each iteration of the loop. Then, I created a variable called temp and assigned it the value of the split line. Once this
+was done, I assigned the variable distance to the second value of the split line and had it added to the running total, called
+partial distance because it's the distance for this particular file. Once the loop ran through all of the lines of the file,
+it closed the file and returned the values of the partial distance and the partial amount of lines. Once the function was
+defined, I set the total distance and total lines to 0, so that I could keep a running total of the totals of each file,
+assuming the user enters multiple files. I set the variable 'file_object' equal to the name of the file the user entered,
+and then I called the function with the name of the file as the argument. After this, I set up a while loop so that the
+program would run until the user entered one of the three strings that would stop the program. I defined x and y as the two
+partial values returned by the function each time, and I added them to the running totals. After this, I displayed the
+partial data for each file in a table, as well as the totals in the final table, once the user ended the program.

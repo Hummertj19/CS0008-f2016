@@ -5,7 +5,7 @@
 # Max Novelli (man8@pitt.edu)
 #
 # Description:
-# Programming Exercise 16
+# Programming Exercise 1
 
 # The function takes the two numbers and performs all of the operations on them
 

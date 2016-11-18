@@ -1,0 +1,11 @@
+Using the files given, this is what the program displays:
+
+Number of input files read                  : 3
+Total number of lines read                  : 450
+Total distance ran                          : 23222.95594971854
+Maximum distance ran                        : 99.91761010374586
+By runner                                   : Roland
+Minimum distance ran                        : 0.057889446920667
+By runner                                   : Alex
+Total number of participants                : 450
+Number of participants with multiple records: 60

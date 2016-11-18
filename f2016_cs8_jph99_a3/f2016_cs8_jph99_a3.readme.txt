@@ -1,0 +1,15 @@
+The first thing I did with this program was to make a variable for the file name, incase it changes, so I would only have
+to change it in one place in the program. Then I opened the text file that contained the 3 data files, and then took the
+new line character away from them, so it was just a list of the 3 file names to be read. Then I set up a for loop to open
+the three files there, and also kept a count so I could total the files read at the end. Then I got rid of the header at the
+top of each file, so it would be just the names and distances. Then I added the information to the data set and calculated
+the total distance by splitting the line and taking the second value (index [1]) and turning them all into floats, before
+taking their sum. Next I split the line and made the first part the key and the second part the value for the dictionary I
+created. Then I created another dictionary to keep track of the times when a name was repeated, and to add up the value
+so I could get the total distance traveled by each person. Then I calculated the max and min distance using those respective
+functions, after doing the line split from the total distance. Then I had to take that value and find the matching key so
+that I would be able to display the person who ran the max/min distance. Next I set up a count to find the number of
+participants that appeared more than once. After this, I created a result list so that I could set it up to write it onto
+an output file, and I took the values from each dictionary and put them together, and used the put together variable to
+append all of the items to the result list. Then I took the result list and formatted the string so that it would be
+a vertical list in the final file, then I displayed all the results.

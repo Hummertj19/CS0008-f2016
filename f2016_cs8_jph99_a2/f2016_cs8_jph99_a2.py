@@ -10,6 +10,8 @@
 # The idea of this program is to take .csv files and add up the total number of lines, as well as the distance ran,
 # which is the second value in the file.
 
+# MN: printKV function is missing
+
 # First, I will define the process file, and define the file opened as the distance_file
 def process_file(fh):
     distance_file = open(fh, 'r')

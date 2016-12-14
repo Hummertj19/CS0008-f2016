@@ -1,0 +1,18 @@
+Since we were required to use a class for this project, unlike the last one, I decided to just start over, but use the same
+logic that I used in the third assignment. The first thing I did was define the runners class, and define all of the methods
+that we were required to. Then, I defined a function that would go through the master file, open each file in the master file,
+skip the newline, and then take all of the data and put it into an empty list that I called the 'result_list'. The next step
+was to split each line at it's comma and take away the newline character, which I did in the function in one line. Then I
+appended the name and distance to the result list. Finally, the function returns the result list. Next I had to ask the user
+to enter the master file, asking for the full path just incase. Then I created a new empty list, called 'raw_data', and I
+looped through all of the files and added them to this list. Here I used the method Max used in his solution he shared with us.
+Next, I calculated the total number of lines read and the total distance ran by everybody by taking the length of the raw data
+list and then adding all of the distances up. My next step was initialize the min and max distance variables, since I knew I
+had to find them and this seemed like an easier way than how I did it in Assignment 3. Then I looped through the runners list
+and for min and max did the same thing: if it found a value either higher or lower than what it had at the current moment, it
+would reassign the higher or lower value to the max/min distance, and once it had looped through all the lines, it would have
+both the highest and lowest value of distance ran, plus the person who did it. Then I found the total number of participants
+by taking the length of the runners list, because this combined each person if they appeared more than once. Then I got the
+# of participants who appeared more than once by counting them if they had a value of over 1 for appearing multiple times for
+the getRuns method. After that, I used the print function to display all of the data I calculated. Finally, I created an output
+file the contained the results of the program, and closed the file at the end.

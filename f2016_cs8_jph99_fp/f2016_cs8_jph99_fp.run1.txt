@@ -1,0 +1,12 @@
+Please enter the full path of the master file: /Users/Hummertj19/Documents/CS0008/CS0008-f2016/ \
+CS0008-f2016/f2016_cs8_jph99_fp/f2016_cs8_fp/f2016_cs8_fp.data.txt
+ Number of Input files read   :     3
+ Total number of lines read   :   450
+ Total distance run           :  23222.95595
+ Max distance run             :    205.82148
+   by participant             : Glynis
+ Min distance run             :      0.05789
+   by participant             : Alex
+ Total number of participants :   388
+ Number of participants
+  with multiple records       :     60.00000

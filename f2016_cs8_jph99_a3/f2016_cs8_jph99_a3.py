@@ -1,7 +1,17 @@
+#
+# MN: header with user, intructor and course info is missing
+#
+# Notes:
+#
+
+
 # First I set the variable equal to the path of the file, then I opened the file and had it read all the lines, and
 # take the 3 files in the text file and save them into memory
-datasources = '/Users/Hummertj19/Documents/CS0008/CS0008-f2016/CS0008-f2016/f2016_cs8_jph99_a3/f2016_cs8_a3/\
-f2016_cs8_a3.data.txt'
+# MN: why not asking the user for the master list file name?
+# MN: if you hard code the file path it makes it hard to test.
+#datasources = '/Users/Hummertj19/Documents/CS0008/CS0008-f2016/CS0008-f2016/f2016_cs8_jph99_a3/f2016_cs8_a3/\
+#f2016_cs8_a3.data.txt'
+datasources = 'f2016_cs8_a3.data.txt'
 fh = open(datasources, 'r')
 sourceFiles = fh.readlines()
 fh.close()
@@ -37,6 +47,10 @@ for source in sourceFiles:
             num_of_times_dict[key]+=1
             # Here I found the max and min distances by running those respective functions, and then finding the key
             # associated with that value
+            # MN: here you are performing these statements for every line read from each data file
+            #     I'm quite sure that you could move them reide after these 2 loops, saving time and cpu cycles
+            # MN: with this logic, you find the min and max on each single record/run,
+            #     not the min and max on the total distance run by the participants
             maximum_distance = max([float(item.split(',')[1]) for item in data])
             max_runner = {v: k for k, v in dictionary.items()}[maximum_distance]
             minimum_distance = min([float(item.split(',')[1]) for item in data])
@@ -67,7 +81,9 @@ for line in result_list:
     line_string='%s,%d,%f' % (line_name,line_repeat,line_distance)
     result_string+=(line_string)+'\n'
 # This part creates a file and puts the final list into it
-new_file = open('results.txt','w')
+# MN: respect file naming conventions as requested by assignment
+#new_file = open('results.txt','w')
+new_file = open('f2016_cs8_jph99_a3.output.txt','w')
 new_file.write(result_string)
 new_file.close()
 
